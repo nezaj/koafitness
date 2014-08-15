@@ -6,11 +6,6 @@ import logging
 
 from .settings import app_config
 
-def configure_sqlalchemy_logger(format_string, level):
-    logger = logging.getLogger('sqlalchemy.engine')
-    logger.setLevel(level)
-    logger.addHandler(get_stderr_handler(format_string, level))
-
 def get_stderr_handler(format_string, level):
     "Returns a standard error handler with provided format and level"
     handler = logging.StreamHandler()
