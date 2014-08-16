@@ -8,7 +8,7 @@ CSS_ASSETS = [
 ]
 
 JS_ASSETS = [
-    "js/vendor/jqeury-1.11.1.min.js",
+    "js/vendor/jquery-1.11.1.min.js",
     "js/vendor/bootstrap.js",
     "js/application.js",
     "js/smooth-scroll.js"
