@@ -1,12 +1,10 @@
 Action
 ======
+* Contact us / Social icons
+* About
 
 Backlog
 =======
-* Navbar
-    - Logo
-* Contact us / Social icons
-* About
 * Instructors
 * Programs
 * Competition Team

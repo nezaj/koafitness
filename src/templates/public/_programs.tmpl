@@ -1,0 +1,29 @@
+{% macro render_program(name, id) %}
+  <div class="col-sm-6 col-md-4">
+    <div class="program-item">
+      <a href="#" class="program-link" data-toggle="modal" data-target="#{{ id }}-modal">
+          <div class="program-hover">
+              <div class="program-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+              </div>
+          </div>
+          <img src="static/img/pg-{{ id }}.jpg" class="img-responsive" alt="">
+      </a>
+      <div class="program-caption">
+          <h4>{{ name }}</h4>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
+<div class="container">
+  <div class="row">
+    <div class="text-center">
+      <h2 class="section-heading">Programs</h2>
+    </div>
+  </div>
+  <div class="row">
+    {{ render_program("Muay Thai", "muay-thai") }}
+    {{ render_program("Boxing", "boxing") }}
+  </div>
+</div>

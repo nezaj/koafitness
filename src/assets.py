@@ -2,11 +2,13 @@ from flask_assets import Environment, Bundle
 
 CSS_ASSETS = [
     'css/vendor/bootstrap.css',
-    Bundle('css/application.scss', filters='pyscss', output='css/compiled-scss.css')
+    Bundle('css/application.scss',
+           'css/programs.scss',
+            filters='pyscss', output='css/compiled-scss.css')
 ]
 
 JS_ASSETS = [
-    "js/vendor/jquery-1.11.0.js",
+    "js/vendor/jqeury-1.11.1.min.js",
     "js/vendor/bootstrap.js",
     "js/application.js",
     "js/smooth-scroll.js"
