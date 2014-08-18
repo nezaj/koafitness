@@ -19,13 +19,14 @@ body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #000;
+}
 
 /* Over-ride default bootstrap classes */
 .modal { color: black; }
 
 /* Navbar */
 .navbar-custom {
-    margin-bottom: 0;
+    margin-bottom: 20px;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     background-color: #000;
@@ -126,7 +127,7 @@ body {
 @media(min-width:767px) {
     .intro {
         height: 100%;
-        padding: 0;
+        padding: 100px 0;
     }
 
     .intro .intro-body .brand-heading {
